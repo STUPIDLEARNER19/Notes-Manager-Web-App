@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Notes Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>Notes Manager</header>
+
+  <nav>
+    <a href="index.html"><button>Notes</button></a>
+    <a href="dashboard.html"><button>Dashboard</button></a>
+    <a href="admin.html"><button>Admin Panel</button></a>
+  </nav>
+
+  <div class="container">
+    <h2>Add New Note</h2>
+    <input type="text" id="noteTitle" placeholder="Note Title">
+    <textarea id="noteContent" placeholder="Note Content"></textarea>
+    <button class="btn btn-primary" onclick="addNote()">Add Note</button>
+
+    <div id="notesSuccessAlert" class="alert alert-success">Note added successfully!</div>
+    <div id="notesErrorAlert" class="alert alert-danger">Please fill in all fields!</div>
+
+    <h2>Your Notes</h2>
+    <div id="notesList"></div>
+  </div>
+
+  <!-- Delete Confirmation Modal -->
+  <div id="deleteModal">
+    <div class="modal-content">
+      <h3>Delete Note</h3>
+      <p>Are you sure you want to delete this note?</p>
+      <button id="confirmDeleteBtn" class="btn btn-danger">Delete</button>
+      <button id="cancelDeleteBtn" class="btn btn-primary">Cancel</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

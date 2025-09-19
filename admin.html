@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>Admin Panel</header>
+
+  <nav>
+    <a href="index.html"><button>Notes</button></a>
+    <a href="dashboard.html"><button>Dashboard</button></a>
+    <a href="admin.html"><button>Admin Panel</button></a>
+  </nav>
+
+  <div class="container">
+    <h2>All Notes (Admin View)</h2>
+    <div id="adminNotesList"></div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      updateAdminPanel();
+    });
+  </script>
+</body>
+</html>
